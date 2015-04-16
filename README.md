@@ -16,6 +16,7 @@
 
 ```
 #!php
+<?php
 // ...
     'image_property' => array(
         'value' => array(
