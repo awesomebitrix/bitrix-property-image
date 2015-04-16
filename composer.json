@@ -1,0 +1,16 @@
+{
+    "name": "devel59/bitrix-property-image",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Stanislav Zabolotnykh",
+            "email": "v40287836@yandex.ru"
+        }
+    ],
+    "require": {
+        "imagine/imagine": "~0.6.0"
+    },
+    "autoload": {
+        "Devel59\\Bitrix\\Iblock\\Property\\": "src/Iblock/Property"
+    }
+}

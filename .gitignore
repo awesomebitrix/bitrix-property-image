@@ -1,0 +1,6 @@
+# editors
+.idea
+
+# utils
+vendor
+composer.lock
