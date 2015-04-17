@@ -15,6 +15,8 @@
 В файле **bitrix/.settings.php** нужно указать расширение для работы с изображениями
 
 ```
+#!php
+<?php
 // ...
     'image_property' => array(
         'value' => array(
