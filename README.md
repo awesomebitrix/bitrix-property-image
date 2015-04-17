@@ -34,7 +34,12 @@ use Devel59\Bitrix\Iblock\Property\ImageProperty;
 require_once __DIR__ . '<путь до корня проекта>/vendor/autoload.php';
 
 $eventMgr = EventManager::getInstance();
-ImageProperty::subscribeToEvents($eventMgr);
+ImageProperty::subscribeToAll($eventMgr); // включает в себя subscribeToBuildList и subscribeToSetProperty
+/*
+ * Если свойство еще создано или новое, то можно подисаться только на одно событие - сократит обращения к базе,
+ * но старые изображения не будут менять размер после сохранения
+ */
+ImageProperty::subscribeToBuildList($eventMgr);
 ```
 
 # Использование #
