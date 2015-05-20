@@ -38,7 +38,7 @@ require_once __DIR__ . '<путь до корня проекта>/vendor/autoloa
 $eventMgr = EventManager::getInstance();
 ImageProperty::subscribeToAll($eventMgr); // включает в себя subscribeToBuildList и subscribeToSetProperty
 /*
- * Если свойство еще создано или новое, то можно подисаться только на одно событие - сократит обращения к базе,
+ * Если свойство еще не создано или новое, то можно подисаться только на одно событие - сократит обращения к базе,
  * но старые изображения не будут менять размер после сохранения
  */
 ImageProperty::subscribeToBuildList($eventMgr);
